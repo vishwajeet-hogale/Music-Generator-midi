@@ -15,8 +15,7 @@ Music21 is a Python toolkit for computer-aided musicology, allowing the study an
 ### Keras
 Keras is a high-level neural networks API that simplifies interactions with TensorFlow. It's designed for fast experimentation and prototyping.
 
-### Training
-Data
+### Training Data
 In the provided GitHub repository, piano music, mainly from Final Fantasy soundtracks, is used. The data consists of Note and Chord objects, representing pitch, octave, offset, and simultaneous notes. A total of 352 different notes and chords are identified in the dataset.
 
 ### Preparing the Data
@@ -25,7 +24,7 @@ Data preparation involves loading MIDI files, extracting notes and chords, and c
 ### Model
 The model architecture includes LSTM layers, Dropout layers for regularization, Dense layers for fully connected networks, and an Activation layer. The model is compiled with categorical cross-entropy loss and RMSprop optimizer.
 
-### Training
+### Training the model
 The model is trained using the prepared input sequences and their respective outputs. Model checkpoints are used to save weights after each epoch.
 
 ### Generating Music
